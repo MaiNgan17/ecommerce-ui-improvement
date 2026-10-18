@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Giao diện giỏ hàng thương mại điện tử">
+    <title>Giỏ hàng | Hasaki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="#" class="logo" aria-label="Hasaki - Trang chủ">
+    HASAKI
+    <small class="logo-tagline">HÀNG CHÍNH HÃNG · GIÁ TỐT</small>
+</a>
+        </div>
+    </header>
+
+    <main class="container cart-page">
+        <nav class="breadcrumb" aria-label="Đường dẫn">
+            <a href="#">Trang chủ</a>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">Giỏ hàng</span>
+        </nav>
+
+        <div class="page-heading">
+            <h1>Giỏ hàng của bạn</h1>
+            <p>Kiểm tra sản phẩm và chi phí trước khi đặt hàng.</p>
+        </div>
+
+        <div class="cart-layout">
+
+            <!-- CỘT TRÁI: DANH SÁCH SẢN PHẨM -->
+            <section class="cart-products" aria-labelledby="products-heading">
+                <div class="section-heading">
+                    <h2 id="products-heading">Sản phẩm đã chọn</h2>
+                    <span class="product-count">4 sản phẩm</span>
+                </div>
+
+                <!-- Sản phẩm 1 -->
+                <article class="cart-item">
+                    <img
+                        class="product-image"
+                        src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=240&q=80"
+                        alt="Sản phẩm chăm sóc da"
+                    >
+
+                    <div class="product-info">
+                        <h3>Kem dưỡng ẩm Daily Moisture</h3>
+                        <p class="product-variant">Phân loại: Hũ 50 ml</p>
+                        <p class="unit-price">Đơn giá: 189.000 ₫</p>
+
+                        <div class="product-bottom">
+                            <label class="quantity-label">
+                                Số lượng
+                                <input
+                                    type="number"
+                                    name="quantity-1"
+                                    value="1"
+                                    min="1"
+                                    max="99"
+                                    step="1"
+                                    aria-label="Số lượng Kem dưỡng ẩm Daily Moisture"
+                                >
+                            </label>
+
+                            <p class="item-total">
+                                <span>Thành tiền</span>
+                                <strong>189.000 ₫</strong>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Sản phẩm 2 -->
+                <article class="cart-item">
+                    <img
+                        class="product-image"
+                        src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=240&q=80"
+                        alt="Sản phẩm chăm sóc da mặt"
+                    >
+
+                    <div class="product-info">
+                        <h3>Sữa rửa mặt Gentle Cleanser</h3>
+                        <p class="product-variant">Phân loại: Chai 150 ml</p>
+                        <p class="unit-price">Đơn giá: 245.000 ₫</p>
+
+                        <div class="product-bottom">
+                            <label class="quantity-label">
+                                Số lượng
+                                <input
+                                    type="number"
+                                    name="quantity-2"
+                                    value="2"
+                                    min="1"
+                                    max="99"
+                                    step="1"
+                                    aria-label="Số lượng Sữa rửa mặt Gentle Cleanser"
+                                >
+                            </label>
+
+                            <p class="item-total">
+                                <span>Thành tiền</span>
+                                <strong>490.000 ₫</strong>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Sản phẩm 3 -->
+                <article class="cart-item">
+                    <img
+                        class="product-image"
+                        src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=240&q=80"
+                        alt="Sản phẩm dưỡng da dạng chai"
+                    >
+
+                    <div class="product-info">
+                        <h3>Tinh chất dưỡng da Skin Serum</h3>
+                        <p class="product-variant">Phân loại: Chai 30 ml</p>
+                        <p class="unit-price">Đơn giá: 129.000 ₫</p>
+
+                        <div class="product-bottom">
+                            <label class="quantity-label">
+                                Số lượng
+                                <input
+                                    type="number"
+                                    name="quantity-3"
+                                    value="1"
+                                    min="1"
+                                    max="99"
+                                    step="1"
+                                    aria-label="Số lượng Tinh chất dưỡng da Skin Serum"
+                                >
+                            </label>
+
+                            <p class="item-total">
+                                <span>Thành tiền</span>
+                                <strong>129.000 ₫</strong>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Sản phẩm 4 -->
+                <article class="cart-item">
+                    <img
+                        class="product-image"
+                        src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=240&q=80"
+                        alt="Sản phẩm chăm sóc cá nhân"
+                    >
+
+                    <div class="product-info">
+                        <h3>Kem chống nắng Sun Protection</h3>
+                        <p class="product-variant">Phân loại: Tuýp 50 ml</p>
+                        <p class="unit-price">Đơn giá: 320.000 ₫</p>
+
+                        <div class="product-bottom">
+                            <label class="quantity-label">
+                                Số lượng
+                                <input
+                                    type="number"
+                                    name="quantity-4"
+                                    value="1"
+                                    min="1"
+                                    max="99"
+                                    step="1"
+                                    aria-label="Số lượng Kem chống nắng Sun Protection"
+                                >
+                            </label>
+
+                            <p class="item-total">
+                                <span>Thành tiền</span>
+                                <strong>320.000 ₫</strong>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <a class="continue-shopping" href="#">
+                    <span aria-hidden="true">←</span>
+                    Tiếp tục mua sắm
+                </a>
+            </section>
+
+            <!-- CỘT PHẢI: TÓM TẮT ĐƠN HÀNG -->
+            <aside class="order-summary" aria-labelledby="summary-heading">
+                <h2 id="summary-heading">Tóm tắt đơn hàng</h2>
+
+                <div class="summary-row">
+                    <span>Tạm tính (4 sản phẩm)</span>
+                    <strong>1.128.000 ₫</strong>
+                </div>
+
+                <div class="summary-row">
+                    <span>Phí vận chuyển ước tính</span>
+                    <strong>25.000 ₫</strong>
+                </div>
+
+                <p class="shipping-note">
+                    Phí vận chuyển là mức ước tính và có thể thay đổi
+                    theo địa chỉ nhận hàng, phương thức giao hàng
+                    và chính sách áp dụng.
+                </p>
+
+                <div class="summary-divider"></div>
+
+                <div class="summary-total">
+                    <span>Tổng thanh toán dự kiến</span>
+                    <strong>1.153.000 ₫</strong>
+                </div>
+
+                <p class="total-note">
+                    Tổng tiền trên chưa bao gồm các khoản phát sinh
+                    chưa xác định, nếu có.
+                </p>
+
+                <button class="checkout-button" type="button">
+                    Tiếp tục đặt hàng
+                    <span aria-hidden="true">→</span>
+                </button>
+
+                <div class="secure-note">
+                    <span aria-hidden="true">✓</span>
+                    Minh bạch chi phí trước khi xác nhận đơn hàng
+                </div>
+
+                <div class="payment-note">
+                    <h3>Lưu ý</h3>
+                    <p>
+                        Vui lòng kiểm tra lại số lượng, thông tin sản phẩm
+                        và chi phí giao hàng trước khi hoàn tất đặt hàng.
+                    </p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+  
+<footer class="site-footer">
+    <div class="container footer-content">
+        <div class="footer-brand">
+            <h2>HASAKI</h2>
+            <p>HÀNG CHÍNH HÃNG · GIÁ TỐT</p>
+            <p>Đồng hành cùng bạn trong hành trình chăm sóc sắc đẹp.</p>
+        </div>
+
+        <div class="footer-links">
+            <div>
+                <h3>Về Hasaki</h3>
+                <p>Giới thiệu</p>
+                <p>Sản phẩm nổi bật</p>
+            </div>
+
+            <div>
+                <h3>Hỗ trợ khách hàng</h3>
+                <p>Hướng dẫn mua hàng</p>
+                <p>Chính sách giao hàng</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Hasaki — Giao diện mô phỏng phục vụ học tập.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
