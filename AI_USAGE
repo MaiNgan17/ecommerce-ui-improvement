@@ -1,0 +1,27 @@
+# AI Usage Log
+
+## 1. Công cụ AI
+Tên công cụ: ChatGPT / Gemini
+
+## 2. Mục đích sử dụng
+Hỗ trợ khảo sát và phân tích nghiệp vụ 5 khu vực của website thương mại điện tử Hasaki.vn, đề xuất phương án thiết kế giao diện giỏ hàng minh bạch chi phí, gợi ý cấu trúc mã nguồn HTML5 và CSS3 tương thích responsive.
+
+## 3. Prompt đã sử dụng
+- Prompt 1: Yêu cầu phân tích nghiệp vụ 5 khu vực của website Hasaki.vn (Trang chủ, Danh mục, Chi tiết sản phẩm, Tìm kiếm, Giỏ hàng).
+- Prompt 2: Yêu cầu đề xuất phương án thiết kế giao diện, cấu trúc HTML, tổ chức CSS và nguyên tắc responsive cho khu vực giỏ hàng.
+- Prompt 3: Yêu cầu cung cấp mã nguồn hoàn chỉnh gồm tệp HTML và tệp CSS cho giao diện giỏ hàng tối thiểu 4 sản phẩm mẫu với bố cục linh hoạt trên Desktop và Mobile.
+
+## 4. Kết quả AI đề xuất
+- Cung cấp bảng phân tích chi tiết cho 5 khu vực của Hasaki.vn.
+- Đề xuất bố cục hai cột cho máy tính và một cột cho điện thoại, sử dụng CSS Grid và Flexbox.
+- Cung cấp mã mẫu cho tệp `index.html` và `style.css` đáp ứng tiêu chí minh bạch chi phí giỏ hàng (tạm tính, phí vận chuyển ước tính, tổng thanh toán dự kiến).
+
+## 5. Kiểm tra và điều chỉnh
+- Đã kiểm tra thực tế trên website Hasaki.vn để đối chiếu các nhận định của AI.
+- Tự điều chỉnh lại tiêu đề trang (`<title>`), định danh logo thành "Hasaki", cập nhật tên thương hiệu và các thông tin khẩu hiệu cho phù hợp hoàn hảo với yêu cầu bài tập.
+- Kiểm tra tính tương thích trên cả máy tính lẫn thiết bị di động bằng công cụ lập trình viên (F12) của trình duyệt.
+
+## 6. Phần tôi hiểu và có thể giải thích
+- Hiểu rõ cách sử dụng các thẻ HTML5 có ngữ nghĩa (`<main>`, `<section>`, `<article>`) để cấu trúc trang giỏ hàng.
+- Nắm vững cách tổ chức CSS theo nhóm (từ thiết lập chung, biến `:root`, đến bố cục Grid/Flexbox và Media Queries để co giãn giao diện trên điện thoại).
+- Hiểu rõ vai trò của thẻ `<title>` trong việc hiển thị tên trên tab trình duyệt và cách định dạng logo thương hiệu bằng CSS.
