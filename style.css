@@ -393,6 +393,8 @@ background: #ffffff;
    7. NÚT ĐẶT HÀNG VÀ THÔNG TIN
 ======================================== */
 
+
+/* Nút Tiếp tục đặt hàng */
 .checkout-button {
     display: flex;
     align-items: center;
@@ -403,9 +405,9 @@ background: #ffffff;
     min-height: 50px;
     padding: 13px 18px;
 
-    color: var(--white);
-    background: var(--primary);
-    border: 2px solid var(--primary);
+    color: #ffffff;
+    background-color: #176b45;
+    border: 2px solid #176b45;
     border-radius: 8px;
 
     font-size: 15px;
@@ -413,17 +415,21 @@ background: #ffffff;
     cursor: pointer;
 
     transition:
-        background-color 0.2s ease,
-        border-color 0.2s ease;
+        background-color 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
+/* Khi di chuột vào nút */
 .checkout-button:hover {
-    background: var(--primary-hover);
-    border-color: var(--primary-hover);
+    background-color: #105437;
+    border-color: #105437;
+    box-shadow: 0 4px 12px rgba(23, 107, 69, 0.22);
 }
 
+/* Khi điều hướng bằng bàn phím */
 .checkout-button:focus-visible {
-    outline: 3px solid #8fc8a7;
+    outline: 3px solid #b88942;
     outline-offset: 3px;
 }
 
