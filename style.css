@@ -189,13 +189,20 @@ a {
    5. THẺ SẢN PHẨM
 ======================================== */
 
+
 .cart-item {
     display: flex;
     align-items: flex-start;
     gap: 18px;
-    padding: 22px 0;
-    border-bottom: 1px solid var(--border);
+
+    margin: 14px 0;
+    padding: 18px;
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--white);
 }
+
 
 .product-image {
     flex: 0 0 112px;
