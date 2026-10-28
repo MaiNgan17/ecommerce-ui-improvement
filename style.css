@@ -145,7 +145,7 @@ a {
 
 .cart-layout {
     display: grid;
-    grid-template-columns: minmax(0, 1.8fr) minmax(300px, 1fr);
+    grid-template-columns: 1fr 1fr;
     align-items: start;
     gap: 26px;
 }
