@@ -247,13 +247,14 @@ background: #ffffff;
     color: var(--text);
 }
 
+
 .product-bottom {
     display: flex;
-    align-items: flex-end;
     justify-content: space-between;
+    align-items: center;
+    gap: 20px;
     flex-wrap: wrap;
-    gap: 14px;
-    margin-top: 14px;
+    margin-top: 18px;
 }
 
 .quantity-label {
