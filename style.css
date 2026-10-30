@@ -565,7 +565,7 @@ background: #ffffff;
 
     .cart-item {
         gap: 12px;
-        padding: 14px;
+        padding: 18px 0;
     }
 
     .product-image {
@@ -729,5 +729,17 @@ background: #ffffff;
 
     .site-footer .footer-links {
         grid-template-columns: 1fr 1fr !important;
+    }
+}
+/* Tạo khoảng cách giữa hình ảnh và viền thẻ trên mobile */
+@media (max-width: 700px) {
+    .cart-item {
+        padding: 14px;
+    }
+
+    .product-image {
+        flex-shrink: 0;
+        margin-left: 6px;
+        margin-top: 6px;
     }
 }
