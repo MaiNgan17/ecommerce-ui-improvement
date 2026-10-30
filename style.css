@@ -694,10 +694,11 @@ background: #ffffff;
     font-size: 26px;
 }
 
-.site-footer .footer-links {
+.site-footer .footer-content {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
-    gap: 20px;
+    align-items: start !important;
+    gap: 24px 40px;
 }
 
 .site-footer .footer-links h3 {
