@@ -679,12 +679,8 @@ background: #ffffff;
 }
 
 .site-footer .footer-content {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
-    align-items: start !important;
-    gap: 24px 40px;
+    grid-template-columns: 1.2fr 1fr !important;
 }
-
 .site-footer .footer-brand,
 .site-footer .footer-links {
     margin: 0 !important;
