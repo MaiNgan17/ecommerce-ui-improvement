@@ -1,0 +1,82 @@
+/* --- Cấu hình chung cho trang --- */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+/* --- Khung chứa portfolio chính --- */
+.portfolio {
+  max-width: 1150px;
+  margin: 0 auto;
+  text-align: center;
+  background: #ffffff;
+  padding: 40px 20px;
+  border: 1px solid #ddd;
+}
+/* --- Tiêu đề MY PORTFOLIO --- */
+.portfolio h2 {
+  font-size: 26px;
+  letter-spacing: 2px;
+  color: #222;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+/* Đường kẻ ngang nhỏ phía dưới tiêu đề */
+.portfolio h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #00aa66;
+  margin: 10px auto 30px auto;
+}
+/* --- Thanh menu tab ngang (.list-tab) --- */
+.list-tab {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+  white-space: nowrap;
+}
+.list-tab li {
+  display: inline-block; /* Giúp các mục xếp hàng ngang */
+  margin: 0 15px;
+}
+.list-tab li a {
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+  font-weight: bold;
+}
+/* Hiệu ứng khi rê chuột hoặc đang chọn tab */
+.list-tab li a:hover,
+.list-tab li a.active {
+  color: #00aa66;
+  border-bottom: 2px solid #00aa66;
+  padding-bottom: 4px;
+}
+/* --- Lưới hiển thị các hình ảnh (.galerry đúng theo chính tả của đề bài) --- */
+.galerry {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;       /* Cho phép tự động rớt xuống dòng khi hết chỗ */
+  justify-content: center;
+  gap: 20px;             /* Khoảng cách giữa các ô ảnh */
+  max-width: 1110px;     /* Giới hạn độ rộng để chuẩn xác 3 ảnh trên 1 hàng */
+}
+.galerry li {
+  width: 350px;          /* Cố định chiều rộng khớp với tỉ lệ 350x260 của đề */
+}
+.galerry li img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+/* Hiệu ứng phóng to nhẹ khi rê chuột vào ảnh */
+.galerry li img:hover {
+  transform: scale(1.02);
+}
