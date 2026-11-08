@@ -9,43 +9,53 @@
 
 /* --- Câu b: Khoa CNTTD --- */
 .bai2-b {
-  color: red;                /* Chữ đỏ */
-  text-align: right;         /* Canh phải */
-  font-style: italic;        /* In nghiêng */
-  border: 3px dotted yellow; /* Viền chấm màu vàng */
-  border-radius: 8px;        /* Bo góc viền */
-  background-color: gray;    /* Màu nền xám */
-  font-size: 15px;           /* Kích thước 15px */
-  opacity: 0.5;              /* Chữ mờ 50% */
+  color: rgba(255, 0, 0, 0.5); /* Chữ đỏ, mờ 50% độ trong suốt (không làm mờ nền/viền) */
+  text-align: right;           /* Canh phải */
+  font-style: italic;          /* In nghiêng */
+  border: 3px dotted yellow;   /* Đường viền chấm màu vàng */
+  border-radius: 8px;          /* Bo góc */
+  background-color: gray;      /* Màu nền xám */
+  font-size: 15px;             /* Kích thước 15px */
+  padding: 10px;               /* Tạo khoảng đệm cho khung đẹp hơn */
+}
+/* --- Câu c: Định dạng chữ BIT-UEH giống hình mẫu --- */
+.bai2-c #demotext {
+color: #A7DD3C;
+background: #FFFFFF;
+text-shadow: 2px 0 0px #800040, 3px 2px 0px rgba(77,0,38,0.5), 3px 0 3px #FF002B, 5px 0 3px #800015, 
+6px 2px 3px rgba(77,0,13,0.5), 6px 0 9px #FF5500, 8px 0 9px #802A00, 
+9px 2px 9px rgba(77,25,0,0.5), 9px 0 18px #FFD500, 11px 0 18px #806A00, 12px 2px 18px rgba(77,66,0,0.5),
+ 12px 0 30px #D4FF00, 14px 0 30px #6A8000, 15px 2px 30px rgba(64,77,0,0.5), 15px 0 45px #80FF00, 
+ 17px 0 45px #408000, 17px 2px 45px rgba(38,77,0,0.5);
+color: #A7DD3C;
+background: #FFFFFF;
 }
 
-/* --- Câu c: Định dạng chữ BIT-UEH --- */
-.bai2-c a {
-  font-size: 24px;
-  font-weight: bold;
-  color: #0056b3;
-  text-decoration: none;
-}
-
-/* --- Câu d: Logo BIT làm hình nền lặp lại & cố định --- */
+/* --- Câu d: Lấy logo BIT làm hình nền lặp lại và cố định --- */
 .bai2-d {
   width: 100%;
-  height: 150px;
+  height: 200px;
   border: 1px solid #ccc;
-  margin: 20px 0;
-  /* Sử dụng link logo trực tiếp từ trang BIT UEH */
-  background-image: url('https://bit.ueh.edu.vn/wp-content/uploads/2017/06/BIT_logo.png');
-  background-size: 30px;         /* Kích thước hình nền 30px */
-  background-repeat: repeat;     /* Lặp lại hình nền */
-  background-attachment: fixed;  /* Cố định hình nền */
+  margin-top: 20px;
+  
+  /* Đường dẫn logo BIT */
+  background-image: url('https://scontent.fsgn7-2.fna.fbcdn.net/v/t39.30808-6/358689356_712772674194748_4833614343900488702_n.jpg?stp=dst-jpg_tt6&cstp=mx960x960&ctp=s960x960&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFWHFg3NQEfkdh3dI08cSIpDk3IApGhaY4OTcgCkaFpjgCDXSIjnK6BEmwLHv7w4g4v1OzMl-CB8mwbuaJdQA3A&_nc_ohc=4LUCUnIQ2S4Q7kNvwGAX9Lg&_nc_oc=AdqWgP7D365-13xiS9Ub6zCE6OXJx6bUAEvte_-Br5IpehtdFYkI3XtLsVcq3hBvaaU&_nc_zt=23&_nc_ht=scontent.fsgn7-2.fna&_nc_gid=xTGrwe8yVD1CsWsB13LYkQ&_nc_ss=7b2a8&oh=00_AQR7INZ8_25_1ilGwY357Ndc1cRS6X9jNTqSsTdn0j0g1w&oe=6AF6045C');
+  
+  /* Kích cỡ hình nền 30px theo yêu cầu */
+ background-size: 30px auto;
+  
+  /* Lặp lại hình nền */
+  background-repeat: repeat;
+  
+  /* Cố định hình nền khi cuộn trang */
+  background-attachment: fixed;
+  
 }
-
-/* --- Câu e: Đoạn văn ẩn & cắt nội dung bị tràn --- */
 .bai2-e {
-  width: 100px;              /* Rộng: 100px */
-  height: 50px;              /* Cao: 50px */
-  border: 1px solid #000;
-  overflow: hidden;          /* Ẩn nội dung khi bị tràn */
-  text-overflow: ellipsis;   /* Cắt nội dung tràn bằng dấu ba chấm */
-  white-space: nowrap;       /* Buộc nội dung nằm trên 1 dòng */
+  width: 100px;              /* i. Rộng: 100px */
+  height: 50px;              /* i. Cao: 50px */
+  overflow: hidden;          /* i. Ẩn nội dung khi bị tràn */
+  text-overflow: ellipsis;   /* ii. Cắt nội dung bị tràn với chữ ... */
+  white-space: nowrap;       /* iii. white-space: nowrap */
+  border: 1px solid #000;    /* Thêm viền để nhìn rõ khung */
 }
