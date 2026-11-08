@@ -1,0 +1,56 @@
+/* --- Cấu hình chung cho trang --- */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 30px;
+}
+
+/* --- Khung chứa lớn (#wrapper) --- */
+#wrapper {
+  width: 700px;
+  margin: 0 auto;
+  border: 2px solid #333;
+  padding: 10px;          /* Khoảng đệm bên trong khung lớn */
+  background-color: #fff;
+
+  /* Phân chia bố cục dạng lưới (Grid) */
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+  grid-template-columns: 150px 1fr; 
+  gap: 10px;              /* Tạo khoảng cách và giúp tách rời các khung con */
+}
+
+/* --- Định dạng từng ô có khung viền riêng giống hình mẫu --- */
+header {
+  grid-area: header;
+  border: 2px solid #333;
+  padding: 20px;
+  font-weight: bold;
+}
+
+nav {
+  grid-area: nav;
+  border: 2px solid #333;
+  padding: 20px;
+  min-height: 180px;
+  font-weight: bold;
+}
+
+main {
+  grid-area: main;
+  border: 2px solid #333;
+  padding: 20px;
+  min-height: 180px;
+  font-weight: bold;
+}
+
+footer {
+  grid-area: footer;
+  border: 2px solid #333;
+  padding: 15px 20px;
+  font-weight: bold;
+}
