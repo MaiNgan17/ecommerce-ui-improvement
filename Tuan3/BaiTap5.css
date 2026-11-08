@@ -1,57 +1,60 @@
 /* --- Khung chung section --- */
 .best-shared {
-  text-align: center;        /* Canh giữa toàn bộ nội dung khối */
+  text-align: center;
   font-family: Arial, sans-serif;
-  padding: 40px;
-  max-width: 800px;
+  padding: 50px 20px;       /* Thêm khoảng cách phía trên để logo không bị cụt */
+  max-width: 1000px;        /* Tăng độ rộng để tiêu đề nằm trên 1 dòng */
   margin: 0 auto;
 }
 
 /* --- Tiêu đề h2 --- */
 .best-shared h2 {
-  font-size: 32px;
-  color: #333;
-  margin-top: 20px;
+  font-size: 40px;
+  color: #222;
+  font-weight: normal;      /* Chữ Best và Company nét bình thường */
+  margin-top: 25px;
+  margin-bottom: 20px;
 }
 
-/* Biến chữ Shared Hosting đậm và có màu sắc nổi bật */
+/* Biến chữ Shared Hosting đậm và có màu xanh dương sáng giống mẫu */
 .best-shared h2 strong {
-  color: #007bff;
+  color: #00bfff;           
+  font-weight: bold;
 }
 
-/* --- Đoạn văn mô tả (lead-text) --- */
+/* --- Đoạn văn mô tả --- */
 .lead-text {
   font-size: 16px;
-  color: #666;
-  margin-bottom: 30px;
+  color: #555;
+  font-style: italic;       /* ĐẶC BIỆT: In nghiêng giống hình mẫu */
+  margin-bottom: 35px;
 }
 
 /* --- Danh sách chứa các nút bấm --- */
 .btn-list {
-  list-style-type: none;     /* Xóa dấu chấm đầu dòng */
+  list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-/* Đưa các nút từ dọc thành hàng ngang */
+/* Đưa các nút ra hàng ngang */
 .btn-list li {
-  display: inline-block;     /* display: inline-block theo gợi ý */
-  margin: 0 10px;            /* Khoảng cách giữa các nút */
+  display: inline-block;
+  margin: 0 10px;
 }
 
-/* --- Định dạng các liên kết (thẻ a) thành dạng nút bấm (button) --- */
+/* --- Định dạng nút bấm màu xám tối giống mẫu --- */
 .btn-list li a {
-  display: inline-block;     
-  text-decoration: none;     /* Bỏ gạch chân link */
-  background-color: #007bff; /* Màu nền xanh */
-  color: #fff;               /* Chữ màu trắng */
-  padding: 12px 25px;        /* Khoảng đệm bên trong nút */
-  border-radius: 5px;        /* Bo góc nút bấm */
-  font-weight: bold;
-  transition: background-color 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #333333; /* Màu xám đen giống hệt mẫu */
+  color: #fff;               /* Chữ trắng */
+  padding: 12px 30px;        /* Khoảng đệm vừa vặn */
+  border-radius: 4px;        /* Bo góc nhẹ */
+  font-size: 15px;
 }
 
 /* Hiệu ứng khi rê chuột vào nút */
 .btn-list li a:hover {
-  background-color: #0056b3; /* Đổi màu nền đậm hơn khi hover */
+  background-color: #555;
 }
