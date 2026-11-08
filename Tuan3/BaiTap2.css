@@ -1,0 +1,50 @@
+/* --- Câu a: Đại học UEH --- */
+.bai2-a {
+  color: blue;               /* Chữ xanh */
+  text-align: center;        /* Canh giữa */
+  font-weight: bold;         /* In đậm */
+  text-decoration: underline;/* Gạch chân */
+  font-size: 30px;           /* Kích thước 30px */
+}
+
+/* --- Câu b: Khoa CNTTD --- */
+.bai2-b {
+  color: red;                /* Chữ đỏ */
+  text-align: right;         /* Canh phải */
+  font-style: italic;        /* In nghiêng */
+  border: 3px dotted yellow; /* Viền chấm màu vàng */
+  border-radius: 8px;        /* Bo góc viền */
+  background-color: gray;    /* Màu nền xám */
+  font-size: 15px;           /* Kích thước 15px */
+  opacity: 0.5;              /* Chữ mờ 50% */
+}
+/* --- Câu c: Định dạng chữ BIT-UEH --- */
+.bai2-c a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0056b3;
+  text-decoration: none;
+}
+
+/* --- Câu d: Logo BIT làm hình nền lặp lại & cố định --- */
+.bai2-d {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #ccc;
+  margin: 20px 0;
+  /* Sử dụng link logo trực tiếp từ trang BIT UEH */
+  background-image: url('https://bit.ueh.edu.vn/wp-content/uploads/2017/06/BIT_logo.png');
+  background-size: 30px;         /* Kích thước hình nền 30px */
+  background-repeat: repeat;     /* Lặp lại hình nền */
+  background-attachment: fixed;  /* Cố định hình nền */
+}
+
+/* --- Câu e: Đoạn văn ẩn & cắt nội dung bị tràn --- */
+.bai2-e {
+  width: 100px;              /* Rộng: 100px */
+  height: 50px;              /* Cao: 50px */
+  border: 1px solid #000;
+  overflow: hidden;          /* Ẩn nội dung khi bị tràn */
+  text-overflow: ellipsis;   /* Cắt nội dung tràn bằng dấu ba chấm */
+  white-space: nowrap;       /* Buộc nội dung nằm trên 1 dòng */
+}
