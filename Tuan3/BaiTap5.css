@@ -1,0 +1,57 @@
+/* --- Khung chung section --- */
+.best-shared {
+  text-align: center;        /* Canh giữa toàn bộ nội dung khối */
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* --- Tiêu đề h2 --- */
+.best-shared h2 {
+  font-size: 32px;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Biến chữ Shared Hosting đậm và có màu sắc nổi bật */
+.best-shared h2 strong {
+  color: #007bff;
+}
+
+/* --- Đoạn văn mô tả (lead-text) --- */
+.lead-text {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* --- Danh sách chứa các nút bấm --- */
+.btn-list {
+  list-style-type: none;     /* Xóa dấu chấm đầu dòng */
+  padding: 0;
+  margin: 0;
+}
+
+/* Đưa các nút từ dọc thành hàng ngang */
+.btn-list li {
+  display: inline-block;     /* display: inline-block theo gợi ý */
+  margin: 0 10px;            /* Khoảng cách giữa các nút */
+}
+
+/* --- Định dạng các liên kết (thẻ a) thành dạng nút bấm (button) --- */
+.btn-list li a {
+  display: inline-block;     
+  text-decoration: none;     /* Bỏ gạch chân link */
+  background-color: #007bff; /* Màu nền xanh */
+  color: #fff;               /* Chữ màu trắng */
+  padding: 12px 25px;        /* Khoảng đệm bên trong nút */
+  border-radius: 5px;        /* Bo góc nút bấm */
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+/* Hiệu ứng khi rê chuột vào nút */
+.btn-list li a:hover {
+  background-color: #0056b3; /* Đổi màu nền đậm hơn khi hover */
+}

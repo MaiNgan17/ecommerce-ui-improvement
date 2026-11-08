@@ -1,0 +1,27 @@
+/* Thêm white-space: nowrap để bắt buộc các mục nằm trên 1 hàng ngang, không bị rớt dòng */
+.menu-ngang {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap; 
+}
+/* Đưa các mục ra hàng ngang */
+.menu-ngang li {
+  display: inline-block; 
+  margin-right: 10px;    /* Giảm khoảng cách lại một chút cho vừa vặn */
+}
+/* Định dạng thẻ a */
+.menu-ngang li a {
+  display: block;
+  width: 105px;              /* Thu nhỏ chiều rộng lại chút xíu (VD: 105px) để vừa khít màn hình */
+  height: 40px;              
+  line-height: 40px;         
+  text-align: center;        
+  
+  background-color: #00ffff; /* Màu nền xanh ngọc */
+  color: blue;               /* Chữ màu xanh dương */
+  text-decoration: underline;/* Gạch chân */
+  
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  font-weight: bold;
+}
