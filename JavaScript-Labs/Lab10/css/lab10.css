@@ -1,20 +1,23 @@
+/* ============================================================
+   JavaScript Labs – Cập nhật bảng màu: Xanh dương & Hồng pastel
+   ============================================================ */
+
 /* styles for basic selector examples */
 
 .selected {
-     background-color: yellow;
+    background-color: #ffb3c6; /* Đổi màu vàng cũ sang hồng pastel */
 }
 
 /* styles for advanced selector example */
 
 .form-body {
-    margin: 0;
-    padding: 0;
-    background-color: #333;
-    
+  margin: 0;
+  padding: 0;
+  background-color: #1e3550; /* Nền tối xanh dương đậm */
+  
   font-family: 'Arial Narrow', Candara, sans-serif;
   font-size: 16px;
   color: #4c4c4c;
-
 }
 
 .form-box {
@@ -22,9 +25,9 @@
   width: 450px; 
   height: 480px; 
   border-radius: 8px/7px; 
-  background-color: #ebebeb; 
-  box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
-  border: solid 1px #cbc9c9;
+  background-color: #f4f8fb; /* Nền kem pha xanh dương nhạt */
+  box-shadow: 1px 2px 5px rgba(0,0,0,.15); 
+  border: solid 1px #d2e3f3;
 }
 
 
@@ -35,7 +38,7 @@
 .form-box h1 {
   font-size: 32px;
   font-weight: 300;
-  color: #4c4c4c;
+  color: #1e3550;
   text-align: center;
   padding-top: 5px;
   margin-bottom: 10px;
@@ -43,17 +46,18 @@
 
 
 .form-box hr {
-  color: #a9a9a9;
-  opacity: 0.3;
+  border: none;
+  height: 1px;
+  background-color: #d2e3f3;
 }
 
-input[type=text],input[type=password] {
+input[type=text], input[type=password] {
   width: 200px; 
   height: 37px; 
   border-radius: 0px 4px 4px 0px/5px 5px 4px 4px; 
   background-color: #fff; 
   box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
-  border: solid 1px #cbc9c9;
+  border: solid 1px #d2e3f3;
   margin-left: -5px;
   margin-top: 13px; 
   padding-left: 10px;
@@ -63,7 +67,7 @@ input[type=text],input[type=password] {
 label {
   display: inline-block;
   width: 120px;
-  background-color: #FF6C3A;
+  background-color: #ff85a1; /* Đổi nhãn cam thành hồng pastel ngọt ngào */
   padding: 8px 0px 8px 15px;
   margin-left: 15px;
   border-radius: 4px 0px 0px 4px;
@@ -85,12 +89,29 @@ label {
   height: 40px;  
   width: 345px; 
   border-radius: 5px; 
-  background-color: #3b9ad8;  
-  box-shadow: 3px 3px rgba(58,87,175,.75);
+  background-color: #2b70c9;  /* Chuyển nút bấm sang xanh dương chủ đạo */
+  box-shadow: 3px 3px rgba(43, 112, 201, 0.4);
+}
+
+.form-box button:hover {
+  background-color: #1b4d8e;
+  box-shadow: none;
 }
 
 /* styles for event listener example */
 
-.panel { width: 200px; height: 200px; background-color: #CFD8DC; font-weight: bold; font-size: 20px;
-    display: flex; align-items: center; justify-content: center; } 
-span#message { font-size: 20px; }
+.panel { 
+    width: 200px; 
+    height: 200px; 
+    background-color: #e3effd; /* Đổi xám nhạt thành xanh dương pastel nhạt */
+    color: #1e3550;
+    font-weight: bold; 
+    font-size: 20px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+} 
+
+span#message { 
+    font-size: 20px; 
+}
