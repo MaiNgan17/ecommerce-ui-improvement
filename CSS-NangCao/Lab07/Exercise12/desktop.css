@@ -1,0 +1,2 @@
+/* Desktop: >= 769px */
+.responsive-layout{display:grid;grid-template-columns:220px 1fr;gap:20px;margin-top:20px}.responsive-layout section{grid-template-columns:repeat(3,1fr)}.responsive-head{letter-spacing:3px}.nav-links{display:flex}.menu-toggle{display:none}

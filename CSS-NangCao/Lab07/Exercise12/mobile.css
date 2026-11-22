@@ -1,0 +1,2 @@
+/* Mobile: <= 768px */
+.responsive-layout{display:block;margin-top:16px}.responsive-layout aside{margin-bottom:15px}.responsive-layout section{grid-template-columns:1fr 1fr}.responsive-tile{height:130px}.responsive-head{font-size:17px}.adaptive-nav{flex-wrap:wrap}.menu-toggle{display:block}.nav-links{display:none;flex:0 0 100%;flex-direction:column;gap:0}.nav-links.is-open{display:flex}.nav-links a{padding:10px;border-top:1px solid #b5d2ed}
