@@ -1,0 +1,2 @@
+/* Lab 07 - Exercise 7.3 - Văn Ngọc Hân */
+.absolute-stage{position:relative;height:280px;background:linear-gradient(145deg,#e2f4ff,#eaeaff);border:2px dashed #92b9e9;border-radius:22px}.stage-label{position:absolute;left:18px;top:20px;color:#446f9f;font-weight:700}.absolute-card{position:absolute;padding:14px;border-radius:15px;background:#78abe7;color:white;font-weight:800;box-shadow:0 14px 24px #426b9d30}.corner-top{top:18px;right:18px}.corner-bottom{bottom:18px;left:18px;background:#9d92e5}
