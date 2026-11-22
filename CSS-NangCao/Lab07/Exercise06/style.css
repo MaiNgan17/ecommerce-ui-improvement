@@ -1,0 +1,2 @@
+/* Lab 07 - Exercise 7.6 - Văn Ngọc Hân */
+.clearfix-container{border:3px dashed #a8c9eb;border-radius:18px;padding:18px;background:#f2f9ff}.clearfix-container:after{content:"";display:table;clear:both}.float-square{float:left;width:120px;height:130px;margin:0 20px 12px 0;background:#8eaff0;border-radius:20px;display:grid;place-items:center;color:white;font-weight:900}.under-box{padding:18px;border-radius:14px;background:#e6f9ef;margin-top:20px}
