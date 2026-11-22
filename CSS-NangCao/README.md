@@ -1,12 +1,12 @@
 # CSS Nâng Cao – Lab 07: Advanced CSS Layout
 
-**Sinh viên:** Văn Ngọc Hân · **MSSV:** 31241027313  
+**Sinh viên:** Mai Thanh Ngân · **MSSV:** 31241022615
 **Lớp học phần:** Phát triển ứng dụng TMĐT – 26C1INF50902701  
 **Giảng viên:** TS Nguyễn Mạnh Tuấn · **Trường:** UEH
 
 ## Truy cập
-- GitHub Repository: https://github.com/han060414/BTCN-chuong-3
-- GitHub Pages (đường dẫn dự kiến nếu Pages được bật cho `main`): https://han060414.github.io/BTCN-chuong-3/CSS-NangCao/
+- GitHub Repository: https://github.com/MaiNgan17/ecommerce-ui-improvement/tree/main/CSS-NangCao
+- GitHub Pages (đường dẫn dự kiến nếu Pages được bật cho `main`): https://maingan17.github.io/ecommerce-ui-improvement/CSS-NangCao/
 - Trang chủ: `index.html` (mở cục bộ hoặc qua GitHub Pages).
 
 ## Mục tiêu
