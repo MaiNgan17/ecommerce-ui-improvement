@@ -1,0 +1,185 @@
+@model IEnumerable<_31241022615_MaiThanhNgan.Models.Movie>
+
+@{
+    ViewData["Title"] = "Cửa hàng phim - 31241022615";
+}
+
+<style>
+    .cinema-hero {
+        background: linear-gradient(120deg, #fce7f3 0%, #e0f2fe 55%, #fef3c7 100%);
+        border: 1px solid #f1f5f9;
+        border-radius: 20px;
+        padding: 24px 28px;
+        margin-bottom: 28px;
+        box-shadow: 0 10px 25px rgba(15, 23, 42, 0.05);
+    }
+    .cinema-badge {
+        display: inline-block;
+        background: linear-gradient(90deg, #ec4899, #8b5cf6);
+        color: #fff;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 4px 12px;
+        border-radius: 999px;
+        margin-bottom: 10px;
+        letter-spacing: 0.3px;
+    }
+    .cinema-title {
+        font-size: 28px;
+        font-weight: 800;
+        color: #1e1b4b;
+        margin-bottom: 6px;
+    }
+    .cinema-subtitle {
+        color: #475569;
+        font-size: 14.5px;
+        margin: 0;
+    }
+    .movie-card {
+        border: 1px solid #e2e8f0;
+        border-radius: 18px;
+        background: linear-gradient(180deg, #ffffff 0%, #fdf4ff 100%);
+        overflow: hidden;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 6px 18px rgba(79, 70, 229, 0.06);
+        transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+    .movie-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 14px 28px rgba(236, 72, 153, 0.16);
+        border-color: #f472b6;
+    }
+    .movie-poster-wrap {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 3 / 4;
+        background: linear-gradient(135deg, #ffe4e6, #e0e7ff);
+        overflow: hidden;
+    }
+    .movie-poster-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.3s ease;
+    }
+    .movie-card:hover .movie-poster-wrap img {
+        transform: scale(1.04);
+    }
+    .movie-rating-pill {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        background: rgba(17, 24, 39, 0.82);
+        color: #fde047;
+        font-size: 12.5px;
+        font-weight: 700;
+        padding: 4px 10px;
+        border-radius: 999px;
+        backdrop-filter: blur(4px);
+    }
+    .movie-body {
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+    .movie-genre {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 700;
+        color: #7c3aed;
+        background: #ede9fe;
+        padding: 4px 12px;
+        border-radius: 999px;
+        margin-bottom: 10px;
+        width: fit-content;
+    }
+    .movie-title {
+        font-size: 17.5px;
+        font-weight: 800;
+        color: #0f172a;
+        margin-bottom: 6px;
+        line-height: 1.35;
+    }
+    .movie-date {
+        font-size: 13px;
+        color: #64748b;
+        margin-bottom: 10px;
+    }
+    .movie-price {
+        font-size: 18px;
+        font-weight: 800;
+        background: linear-gradient(90deg, #e11d48, #f97316);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 10px;
+    }
+    .movie-summary {
+        font-size: 13.5px;
+        color: #475569;
+        line-height: 1.5;
+        margin-bottom: 16px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .movie-action {
+        margin-top: auto;
+    }
+    .btn-buy-colorful {
+        background: linear-gradient(90deg, #ec4899 0%, #6366f1 100%);
+        border: none;
+        color: #fff;
+        font-weight: 700;
+        border-radius: 12px;
+        padding: 10px 14px;
+        box-shadow: 0 6px 14px rgba(99, 102, 241, 0.25);
+        transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+    .btn-buy-colorful:hover {
+        opacity: 0.94;
+        color: #fff;
+        transform: translateY(-1px);
+    }
+    main.pb-3 {
+        padding-bottom: 84px !important;
+    }
+</style>
+
+<div class="container py-2">
+    <div class="cinema-hero">
+        <span class="cinema-badge">✨ TRENDING STORE</span>
+        <div class="cinema-title">Cửa Hàng Phim Trực Tuyến</div>
+        <p class="cinema-subtitle">Sinh viên thực hiện: <strong>31241022615 - Mai Thanh Ngân</strong> • Khám phá &amp; đặt vé nhanh chóng</p>
+    </div>
+
+    <div class="row g-4">
+        @foreach (var item in Model)
+        {
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="movie-card">
+                    <div class="movie-poster-wrap">
+                        <img src="@item.PicturePath" alt="@item.Title" />
+                        <span class="movie-rating-pill">★ @item.Rated/5</span>
+                    </div>
+                    <div class="movie-body">
+                        <span class="movie-genre">@(item.GenreObj?.Name ?? "Chưa phân loại")</span>
+                        <div class="movie-title">@item.Title</div>
+                        <div class="movie-date">📅 Khởi chiếu: @item.ReleaseDate.ToString("dd/MM/yyyy")</div>
+                        <div class="movie-price">@item.Price.ToString("N0") đ</div>
+                        <p class="movie-summary" title="@item.Summary">@item.Summary</p>
+                        <div class="movie-action">
+                            <a class="btn btn-buy-colorful w-100" asp-action="AddToCart" asp-route-id="@item.ID">
+                                Thêm vào giỏ hàng
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
